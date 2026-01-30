@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sunflower Bali Villa – Luxury Private Villa in Legian, Bali</title>
+<meta name="description" content="Sunflower Bali Villa is a luxury private villa in Legian, Bali with private pool, 3 bedrooms, outdoor kitchen, and easy access to beaches, restaurants, and shopping.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -15,116 +16,80 @@
 body{font-family:Inter,Arial,sans-serif;color:#222;background:#fff;line-height:1.6}
 h1,h2,h3{font-family:"Playfair Display",serif}
 a{text-decoration:none;color:inherit}
-img{width:100%;display:block;border-radius:14px;object-fit:cover;cursor:pointer}
-header{position:relative;height:90vh;background:url('pool.jpg') center/cover no-repeat;color:#fff;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}
-header::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,.25))}
-header h1{position:relative;font-size:3rem;margin:0 20px}
-header p{position:relative;font-size:1.2rem;margin:12px 20px}
-.header-buttons{position:relative;margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+img{width:100%;display:block;border-radius:14px}
+.container{max-width:1150px;margin:auto;padding:70px 22px}
 .btn{display:inline-block;padding:14px 28px;border-radius:40px;font-weight:600;transition:.2s}
 .btn-primary{background:var(--gold);color:#fff}
 .btn-outline{border:2px solid #fff;color:#fff}
 .btn-primary:hover,.btn-outline:hover{opacity:.9}
-section{max-width:1150px;margin:auto;padding:60px 20px}
+.hero{position:relative;height:92vh;background:url('images/photo-1.jpg') center/cover no-repeat}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.55),rgba(0,0,0,.25))}
+.hero-content{position:absolute;bottom:18%;left:50%;transform:translateX(-50%);text-align:center;color:#fff;max-width:900px;padding:0 20px}
+.hero h1{font-size:3.2rem;margin-bottom:10px}
+.hero p{font-size:1.1rem;margin-bottom:28px}
+.hero-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .section-title{text-align:center;margin-bottom:40px}
 .section-title h2{font-size:2.4rem;margin-bottom:10px}
 .section-title p{max-width:700px;margin:auto;color:#555}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px;margin-top:30px}
-.feature-card{background:var(--light);padding:26px;border-radius:18px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px}
+.feature-card{background:var(--light);padding:26px;border-radius:18px;text-align:center}
 .feature-card h3{margin:12px 0 6px;font-size:1.25rem}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
 .location-box{margin-top:22px;border-radius:18px;overflow:hidden;border:1px solid #eee}
-footer{background:#111;color:#bbb;text-align:center;padding:40px 20px;font-size:.95rem}
-footer a{color:var(--gold);font-weight:600}
-
-/* Lightbox styles */
-#lightbox{
-  position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);display:none;align-items:center;justify-content:center;z-index:9999}
-#lightbox img{max-width:90%;max-height:90%;border-radius:12px}
-#lightbox span{position:absolute;top:20px;right:30px;color:#fff;font-size:2.5rem;cursor:pointer}
-
-@media(max-width:900px){header h1{font-size:2.3rem}}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.review-card{background:#fff;border:1px solid #eee;border-radius:16px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.05)}
+.review-card p{font-style:italic;margin-bottom:10px}
+.cta{background:linear-gradient(135deg,#222,#111);color:#fff;text-align:center;padding:80px 22px}
+.cta h2{font-size:2.4rem;margin-bottom:12px}
+.cta p{margin-bottom:26px}
+.footer{background:#111;color:#bbb;text-align:center;padding:40px 20px;font-size:.95rem}
+.footer a{color:#fff;font-weight:600}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:40px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,.25)}
+@media(max-width:900px){
+  .hero h1{font-size:2.3rem}
+  .about-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 
-<header>
-  <h1>Sunflower Bali Villa</h1>
-  <p>Luxury private villa in Legian, Bali • Private pool • 3 Bedrooms • Prime Location</p>
-  <div class="header-buttons">
-    <a class="btn btn-primary" href="https://www.airbnb.com.au/rooms/1472856700576978085" target="_blank">Book on Airbnb</a>
-    <a class="btn btn-outline" href="https://www.booking.com/Share-7sc72F" target="_blank">Book on Booking.com</a>
-    <a class="btn btn-primary" href="https://wa.me/61444553738" target="_blank">Book on WhatsApp</a>
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Sunflower Bali Villa</h1>
+    <p>Luxury private villa in Legian, Bali • Private pool • 3 bedrooms • Close to beach, dining & shopping</p>
+    <div class="hero-buttons">
+      <a class="btn btn-primary" href="https://www.airbnb.com.au/rooms/1472856700576978085" target="_blank">Book on Airbnb</a>
+      <a class="btn btn-outline" href="https://www.booking.com/Share-7sc72F" target="_blank">Book on Booking.com</a>
+      <a class="btn btn-primary" href="https://wa.me/61444553738" target="_blank">Book on WhatsApp</a>
+    </div>
   </div>
-</header>
+</section>
 
-<section>
+<!-- ABOUT SECTION -->
+<section class="container">
   <div class="section-title">
     <h2>Welcome to Sunflower Bali Villa</h2>
-    <p>Experience effortless Bali living in a stylish private retreat. Three luxurious bedrooms, a private pool, elegant indoor and outdoor living spaces, and an outdoor kitchen await you.</p>
+    <p>A modern private villa designed for comfort, privacy, and effortless Bali living.</p>
+  </div>
+  <div class="about-grid">
+    <div>
+      <p>Sunflower Bali Villa is a stylish private retreat in Legian, Bali. Featuring a private swimming pool, three elegant bedrooms, modern living spaces, and an outdoor kitchen, the villa is perfect for families, couples, and groups seeking a peaceful yet central location.</p>
+      <p>Located just minutes from beaches, restaurants, and shopping, Sunflower Bali Villa offers the perfect balance of relaxation and convenience.</p>
+    </div>
+    <img src="images/photo-2.jpg" alt="Living area Sunflower Bali Villa">
+  </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="container">
+  <div class="section-title">
+    <h2>Villa Highlights</h2>
+    <p>Everything you need for a luxury Bali stay.</p>
   </div>
   <div class="features">
-    <div class="feature-card"><h3>Private Pool</h3><p>Relax in your own tranquil swimming pool with lounge area.</p></div>
-    <div class="feature-card"><h3>3 Luxury Bedrooms</h3><p>Elegant design, comfortable beds, and air conditioning.</p></div>
-    <div class="feature-card"><h3>Outdoor Kitchen</h3><p>Fully equipped for casual meals or entertaining.</p></div>
-    <div class="feature-card"><h3>On-site Parking</h3><p>Secure private parking for your convenience.</p></div>
-    <div class="feature-card"><h3>Prime Location</h3><p>Minutes from Legian Beach, restaurants, and boutiques.</p></div>
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <h2>Gallery</h2>
-    <p>Click any photo to enlarge.</p>
-  </div>
-  <div class="gallery">
-    <img src="pool.jpg" alt="Sunflower Bali Villa Pool">
-    <img src="living.jpg" alt="Living area">
-    <img src="bedroom1.jpg" alt="Master bedroom">
-    <img src="bedroom2.jpg" alt="Second bedroom">
-    <img src="bathroom.jpg" alt="Bathroom">
-    <img src="kitchen.jpg" alt="Kitchen">
-    <img src="outdoor.jpg" alt="Outdoor area">
-    <img src="driveway.jpg" alt="Driveway and parking">
-    <img src="courtyard.jpg" alt="Entrance courtyard">
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <h2>Location</h2>
-  </div>
-  <div class="location-box">
-    <iframe src="https://maps.google.com/maps?q=Sunflower%20Bali%20Villa%20Legian&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="350"></iframe>
-  </div>
-</section>
-
-<footer>
-  <p>© Sunflower Bali Villa • Legian, Bali • <a href="mailto:bradwrighty1@gmail.com">Contact Us</a></p>
-</footer>
-
-<!-- Lightbox -->
-<div id="lightbox">
-  <span onclick="closeLightbox()">&times;</span>
-  <img id="lightbox-img" src="">
-</div>
-
-<script>
-const gallery = document.querySelectorAll('.gallery img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-
-gallery.forEach(img=>{
-  img.addEventListener('click',()=>{
-    lightbox.style.display='flex';
-    lightboxImg.src=img.src;
-  });
-});
-
-function closeLightbox(){
-  lightbox.style.display='none';
-}
-</script>
-
-</body>
-</html>
+    <div class="feature-card"><h3>Private Pool</h3><p>Enjoy your own tranquil swimming pool and outdoor lounge area.</p></div>
+    <div class="feature-card"><h3>3 Luxury Bedrooms</h3><p>Comfortable beds, air conditioning, and elegant design.</p></div>
+    <div class="feature-card"><h3>Outdoor Kitchen</h3><p>Fully equipped kitchen perfect
