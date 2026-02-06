@@ -1,156 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sunflower Bali Villa – Modern Private Villa in Bali</title>
-<meta name="description" content="Sunflower Bali Villa is a modern stylish private villa in Bali with private pool, elegant bedrooms, outdoor kitchen, and on-site parking.">
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
 <style>
-:root{
-  --gold:#c9a24a;
-  --dark:#1c1c1c;
-  --light:#f7f6f2;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,Arial,sans-serif;color:#222;background:#fff;line-height:1.6}
-h1,h2,h3{font-family:"Playfair Display",serif}
-img{width:100%;display:block;border-radius:14px;cursor:pointer}
-.container{max-width:1150px;margin:auto;padding:70px 22px}
-.btn{display:inline-block;padding:14px 28px;border-radius:40px;font-weight:600;transition:.2s}
-.btn-primary{background:var(--gold);color:#fff}
-.btn-outline{border:2px solid #fff;color:#fff}
-.btn-primary:hover{opacity:.9}
-
-.hero{position:relative;height:92vh;background:url('photo-1.jpg') center/cover no-repeat}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.55),rgba(0,0,0,.25))}
-.hero-content{position:absolute;bottom:18%;left:50%;transform:translateX(-50%);text-align:center;color:#fff;max-width:900px;padding:0 20px}
-.hero h1{font-size:3.2rem;margin-bottom:10px}
-.hero p{font-size:1.1rem;margin-bottom:28px}
-.hero-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-
-.section-title{text-align:center;margin-bottom:40px}
-.section-title h2{font-size:2.4rem;margin-bottom:10px}
-.section-title p{max-width:700px;margin:auto;color:#555}
-
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px}
-.feature-card{background:var(--light);padding:26px;border-radius:18px;text-align:center}
-.feature-card h3{margin:12px 0 6px;font-size:1.25rem}
-
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
-
-.footer{background:#111;color:#bbb;text-align:center;padding:40px 20px;font-size:.95rem}
-.footer a{color:#fff;font-weight:600}
-
-.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:40px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,.25)}
-
-@media(max-width:900px){
-  .hero h1{font-size:2.3rem}
+/* ===== LUXURY BOOKING SECTION ===== */
+.booking-section {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #f6f6f6, #ffffff);
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Lightbox popup */
-.lightbox{
-  position:fixed;
-  top:0;left:0;
-  width:100%;height:100%;
-  background:rgba(0,0,0,.85);
-  display:none;
-  justify-content:center;
-  align-items:center;
-  z-index:9999;
+.booking-section h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
-.lightbox img{
-  max-width:90%;
-  max-height:90%;
-  border-radius:12px;
+
+.booking-section p {
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+
+.booking-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 45px;
+}
+
+.booking-btn {
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.25s ease;
+  min-width: 170px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.booking-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* Button Colors */
+.btn-airbnb { background: #ff385c; }
+.btn-booking { background: #003580; }
+.btn-whatsapp { background: #25d366; }
+.btn-direct { background: #111; }
+
+/* Mobile Perfect */
+@media (max-width: 640px) {
+  .booking-btn {
+    width: 100%;
+    max-width: 340px;
+    font-size: 16px;
+  }
+}
+
+/* Map Styling */
+.map-box {
+  max-width: 1050px;
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 22px 45px rgba(0,0,0,0.10);
 }
 </style>
-</head>
-<body>
 
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Sunflower Bali Villa</h1>
-    <p>Modern stylish private villa • Private pool • Elegant bedrooms • Prime Bali location</p>
-    <div class="hero-buttons">
-      <a class="btn btn-primary" href="https://www.airbnb.com.au/" target="_blank">Book on Airbnb</a>
-      <a class="btn btn-outline" href="https://www.booking.com/" target="_blank">Book on Booking.com</a>
-    </div>
+<section class="booking-section" id="booking">
+  <h2>Book Your Stay at Sunflower Bali Villa</h2>
+  <p>Experience a private luxury villa in Bali — book instantly or contact us directly.</p>
+
+  <div class="booking-buttons">
+    <a href="https://www.airbnb.com.au/rooms/1472856700576978085" target="_blank" class="booking-btn btn-airbnb">
+      Airbnb
+    </a>
+
+    <a href="https://www.booking.com/hotel/id/sunflower-bali-villa.en-gb.html" target="_blank" class="booking-btn btn-booking">
+      Booking.com
+    </a>
+
+    <a href="https://wa.me/61444553738?text=Hello%20I%20would%20like%20to%20book%20Sunflower%20Bali%20Villa" target="_blank" class="booking-btn btn-whatsapp">
+      WhatsApp
+    </a>
+
+    <a href="mailto:sunflowerbalivilla@gmail.com?subject=Direct%20Booking%20Request&body=Hello%20I%20would%20like%20to%20book%20Sunflower%20Bali%20Villa" class="booking-btn btn-direct">
+      Direct Booking
+    </a>
+  </div>
+
+  <div class="map-box">
+    <iframe 
+      src="https://www.google.com/maps?q=-8.702065,115.171576&output=embed"
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
   </div>
 </section>
-
-<section class="container">
-  <div class="section-title">
-    <h2>Welcome to Sunflower Bali Villa</h2>
-    <p>A modern private villa designed for comfort, style, and effortless Bali living.</p>
-  </div>
-  <p>
-    Sunflower Bali Villa is a contemporary private retreat in Bali featuring a private swimming pool,
-    elegant bedrooms, stylish living spaces, a fully equipped outdoor kitchen, and secure on-site parking.
-    Perfect for couples, families, and groups seeking comfort, privacy, and a prime location.
-  </p>
-</section>
-
-<section class="container">
-  <div class="section-title">
-    <h2>Villa Highlights</h2>
-  </div>
-  <div class="features">
-    <div class="feature-card"><h3>Private Pool</h3><p>Relax in your own tranquil swimming pool.</p></div>
-    <div class="feature-card"><h3>Stylish Bedrooms</h3><p>Elegant design, air-conditioning, and premium comfort.</p></div>
-    <div class="feature-card"><h3>Outdoor Kitchen</h3><p>Perfect for relaxed meals and entertaining.</p></div>
-    <div class="feature-card"><h3>On-Site Parking</h3><p>Secure private parking for guests.</p></div>
-  </div>
-</section>
-
-<section class="container">
-  <div class="section-title">
-    <h2>Gallery</h2>
-    <p>Discover your private Bali escape.</p>
-  </div>
-  <div class="gallery">
-    <img src="photo-1.jpg">
-    <img src="photo-2.jpg">
-    <img src="photo-3.jpg">
-    <img src="photo-4.jpg">
-    <img src="photo-5.jpg">
-    <img src="photo-6.jpg">
-    <img src="photo-7.jpg">
-    <img src="photo-8.jpg">
-    <img src="photo-9.jpg">
-    <img src="photo-10.jpg">
-  </div>
-</section>
-
-<div class="footer">
-  <p>© Sunflower Bali Villa • Modern Private Villa in Bali</p>
-</div>
-
-<a class="whatsapp" href="https://wa.me/" target="_blank">WhatsApp</a>
-
-<div class="lightbox" id="lightbox">
-  <img id="lightbox-img">
-</div>
-
-<script>
-const images = document.querySelectorAll(".gallery img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-
-images.forEach(img => {
-  img.addEventListener("click", () => {
-    lightbox.style.display = "flex";
-    lightboxImg.src = img.src;
-  });
-});
-
-lightbox.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
-</script>
-
-</body>
-</html>
