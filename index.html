@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sunflower Bali Villa – Luxury Private Villa in Legian, Bali</title>
-<meta name="description" content="Sunflower Bali Villa is a luxury private villa in Legian, Bali with private pool, 3 bedrooms, outdoor kitchen, and easy access to beaches, restaurants, and shopping.">
+<title>Sunflower Bali Villa – Modern Private Villa in Bali</title>
+<meta name="description" content="Sunflower Bali Villa is a modern stylish private villa in Bali with private pool, elegant bedrooms, outdoor kitchen, and on-site parking.">
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 :root{
   --gold:#c9a24a;
@@ -15,81 +17,140 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Inter,Arial,sans-serif;color:#222;background:#fff;line-height:1.6}
 h1,h2,h3{font-family:"Playfair Display",serif}
-a{text-decoration:none;color:inherit}
-img{width:100%;display:block;border-radius:14px}
+img{width:100%;display:block;border-radius:14px;cursor:pointer}
 .container{max-width:1150px;margin:auto;padding:70px 22px}
 .btn{display:inline-block;padding:14px 28px;border-radius:40px;font-weight:600;transition:.2s}
 .btn-primary{background:var(--gold);color:#fff}
 .btn-outline{border:2px solid #fff;color:#fff}
-.btn-primary:hover,.btn-outline:hover{opacity:.9}
-.hero{position:relative;height:92vh;background:url('images/photo-1.jpg') center/cover no-repeat}
+.btn-primary:hover{opacity:.9}
+
+.hero{position:relative;height:92vh;background:url('photo-1.jpg') center/cover no-repeat}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.55),rgba(0,0,0,.25))}
 .hero-content{position:absolute;bottom:18%;left:50%;transform:translateX(-50%);text-align:center;color:#fff;max-width:900px;padding:0 20px}
 .hero h1{font-size:3.2rem;margin-bottom:10px}
 .hero p{font-size:1.1rem;margin-bottom:28px}
 .hero-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
 .section-title{text-align:center;margin-bottom:40px}
 .section-title h2{font-size:2.4rem;margin-bottom:10px}
 .section-title p{max-width:700px;margin:auto;color:#555}
+
 .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px}
 .feature-card{background:var(--light);padding:26px;border-radius:18px;text-align:center}
 .feature-card h3{margin:12px 0 6px;font-size:1.25rem}
-.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
-.location-box{margin-top:22px;border-radius:18px;overflow:hidden;border:1px solid #eee}
-.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
-.review-card{background:#fff;border:1px solid #eee;border-radius:16px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.05)}
-.review-card p{font-style:italic;margin-bottom:10px}
-.cta{background:linear-gradient(135deg,#222,#111);color:#fff;text-align:center;padding:80px 22px}
-.cta h2{font-size:2.4rem;margin-bottom:12px}
-.cta p{margin-bottom:26px}
+
 .footer{background:#111;color:#bbb;text-align:center;padding:40px 20px;font-size:.95rem}
 .footer a{color:#fff;font-weight:600}
+
 .whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:40px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,.25)}
+
 @media(max-width:900px){
   .hero h1{font-size:2.3rem}
-  .about-grid{grid-template-columns:1fr}
+}
+
+/* Lightbox popup */
+.lightbox{
+  position:fixed;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,.85);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+.lightbox img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:12px;
 }
 </style>
 </head>
 <body>
 
-<!-- HERO SECTION -->
 <section class="hero">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>Sunflower Bali Villa</h1>
-    <p>Luxury private villa in Legian, Bali • Private pool • 3 bedrooms • Close to beach, dining & shopping</p>
+    <p>Modern stylish private villa • Private pool • Elegant bedrooms • Prime Bali location</p>
     <div class="hero-buttons">
-      <a class="btn btn-primary" href="https://www.airbnb.com.au/rooms/1472856700576978085" target="_blank">Book on Airbnb</a>
-      <a class="btn btn-outline" href="https://www.booking.com/Share-7sc72F" target="_blank">Book on Booking.com</a>
-      <a class="btn btn-primary" href="https://wa.me/61444553738" target="_blank">Book on WhatsApp</a>
+      <a class="btn btn-primary" href="https://www.airbnb.com.au/" target="_blank">Book on Airbnb</a>
+      <a class="btn btn-outline" href="https://www.booking.com/" target="_blank">Book on Booking.com</a>
     </div>
   </div>
 </section>
 
-<!-- ABOUT SECTION -->
 <section class="container">
   <div class="section-title">
     <h2>Welcome to Sunflower Bali Villa</h2>
-    <p>A modern private villa designed for comfort, privacy, and effortless Bali living.</p>
+    <p>A modern private villa designed for comfort, style, and effortless Bali living.</p>
   </div>
-  <div class="about-grid">
-    <div>
-      <p>Sunflower Bali Villa is a stylish private retreat in Legian, Bali. Featuring a private swimming pool, three elegant bedrooms, modern living spaces, and an outdoor kitchen, the villa is perfect for families, couples, and groups seeking a peaceful yet central location.</p>
-      <p>Located just minutes from beaches, restaurants, and shopping, Sunflower Bali Villa offers the perfect balance of relaxation and convenience.</p>
-    </div>
-    <img src="images/photo-2.jpg" alt="Living area Sunflower Bali Villa">
-  </div>
+  <p>
+    Sunflower Bali Villa is a contemporary private retreat in Bali featuring a private swimming pool,
+    elegant bedrooms, stylish living spaces, a fully equipped outdoor kitchen, and secure on-site parking.
+    Perfect for couples, families, and groups seeking comfort, privacy, and a prime location.
+  </p>
 </section>
 
-<!-- FEATURES SECTION -->
 <section class="container">
   <div class="section-title">
     <h2>Villa Highlights</h2>
-    <p>Everything you need for a luxury Bali stay.</p>
   </div>
   <div class="features">
-    <div class="feature-card"><h3>Private Pool</h3><p>Enjoy your own tranquil swimming pool and outdoor lounge area.</p></div>
-    <div class="feature-card"><h3>3 Luxury Bedrooms</h3><p>Comfortable beds, air conditioning, and elegant design.</p></div>
-    <div class="feature-card"><h3>Outdoor Kitchen</h3><p>Fully equipped kitchen perfect
+    <div class="feature-card"><h3>Private Pool</h3><p>Relax in your own tranquil swimming pool.</p></div>
+    <div class="feature-card"><h3>Stylish Bedrooms</h3><p>Elegant design, air-conditioning, and premium comfort.</p></div>
+    <div class="feature-card"><h3>Outdoor Kitchen</h3><p>Perfect for relaxed meals and entertaining.</p></div>
+    <div class="feature-card"><h3>On-Site Parking</h3><p>Secure private parking for guests.</p></div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="section-title">
+    <h2>Gallery</h2>
+    <p>Discover your private Bali escape.</p>
+  </div>
+  <div class="gallery">
+    <img src="photo-1.jpg">
+    <img src="photo-2.jpg">
+    <img src="photo-3.jpg">
+    <img src="photo-4.jpg">
+    <img src="photo-5.jpg">
+    <img src="photo-6.jpg">
+    <img src="photo-7.jpg">
+    <img src="photo-8.jpg">
+    <img src="photo-9.jpg">
+    <img src="photo-10.jpg">
+  </div>
+</section>
+
+<div class="footer">
+  <p>© Sunflower Bali Villa • Modern Private Villa in Bali</p>
+</div>
+
+<a class="whatsapp" href="https://wa.me/" target="_blank">WhatsApp</a>
+
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-img">
+</div>
+
+<script>
+const images = document.querySelectorAll(".gallery img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+images.forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+  });
+});
+
+lightbox.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+</script>
+
+</body>
+</html>
